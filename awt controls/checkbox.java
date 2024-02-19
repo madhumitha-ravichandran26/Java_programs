@@ -1,0 +1,24 @@
+import java.awt.*;
+import java.applet.*;
+/*
+<APPLET Code="checkbox" Width=500 Height=200>
+</APPLET>
+*/
+
+public class checkbox extends Applet
+{
+ public void init( )
+ {
+  /*The statement creates an object and
+  adds the checkbox on the applet.*/
+
+  Checkbox chkShoes,chkSocks,chkShirt;
+  chkShoes = new Checkbox("Shoes");
+  chkSocks = new Checkbox("Socks", true); //This checkbox is checked
+  chkShirt = new Checkbox("Shirt");
+
+  add(chkShoes);                
+  add(chkSocks);                
+  add(chkShirt);
+ }
+}

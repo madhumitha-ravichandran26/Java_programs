@@ -1,0 +1,20 @@
+import java.awt.*;
+import java.applet.*;
+
+/*
+<APPLET Code="LabelTest" Width=500 Height=200>
+</APPLET>
+*/
+
+public class LabelTest extends Applet
+{
+ public void init( )
+ {
+  setFont(new Font ( "Helvetica" , Font.BOLD, 14));
+  Label lblLeft = new Label("Name", Label.LEFT);
+  add(lblLeft);
+  Label lblCenter = new Label("aligned center", Label.CENTER);
+  add(lblCenter);
+  Label lblRight = new Label("aligned right", Label.RIGHT);
+  add(lblRight);
+ }

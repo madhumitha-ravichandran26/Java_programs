@@ -1,0 +1,24 @@
+import java.awt.*;
+import java.applet.*;
+
+/*
+<APPLET Code="TextFieldTest" Width=500 Height=200>
+</APPLET>
+*/
+
+public class TextFieldTest extends Applet
+{
+	public void init( )
+	{
+		Label lblName = new Label("enter name");
+		Label lblPhone = new Label("enter phone number");
+		Label lblPasswd = new Label("enter password");
+
+		TextField txtName = new TextField("your name here", 20);
+		TextField txtPhone = new TextField(12);
+
+		add(lblName);                
+		add(txtName);                
+		add(lblPhone);
+		add(txtPhone);                                               
+	}

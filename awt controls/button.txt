@@ -1,0 +1,46 @@
+import java.awt.*;
+import java.applet.*;
+
+/*
+<APPLET Code="ButtonTest" Width=500 Height=200>
+</APPLET>
+*/
+
+public class ButtonTest extends Applet
+{
+ public void init( )
+ {
+                Label l1;
+                Button btnRewind,btnPlay,btnFforward,btnStop;
+                Font f1=new Font("New Times Roman",Font.BOLD,16);
+                Font f2=new Font("New Times Roman",Font.BOLD|Font.ITALIC,12);
+
+                Color c1=new Color(100,100,250);
+
+                l1 = new Label("Creating Buttons");
+
+                btnRewind = new Button("Rewind");
+                btnPlay = new Button("Play");
+                btnFforward = new Button("Fast Forward");
+                btnStop = new Button("Stop");
+
+
+                l1.setForeground(c1);
+                btnRewind.setForeground(c1);
+                btnPlay.setForeground(c1);
+                btnFforward.setForeground(c1);
+                btnStop.setForeground(c1);
+
+                l1.setFont(f1);
+
+                btnRewind.setFont(f2);
+                btnPlay.setFont(f2);
+                btnFforward.setFont(f2);
+                btnStop.setFont(f2);
+
+                add(l1);
+    add(btnRewind);
+                add(btnPlay);
+                add(btnFforward);
+                add(btnStop);
+ }
